@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { Menu, X, Phone, Calendar, ArrowRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { motion, useScroll, useSpring } from "framer-motion";
-import content from "@/tier3-content/content.json";
+import content from "@/data/content.json";
 
 interface NavbarProps {
   onOpenBooking: () => void;
@@ -62,8 +62,8 @@ export default function Navbar({ onOpenBooking }: NavbarProps) {
             <a href="#home" className="flex items-center group">
               <img
                 src="/kumar-hospitals.svg"
-                alt="Kumar Hospital Ortho & Multispeciality"
-                className="h-16 sm:h-20 w-auto object-contain hover:scale-[1.03] transition-transform duration-300 transform scale-125 origin-left"
+                alt="Kumar's Ortho Clinic Ortho & Multispeciality"
+                className="h-14 sm:h-16 w-auto object-contain hover:scale-[1.03] transition-transform duration-300"
               />
             </a>
 
@@ -82,12 +82,6 @@ export default function Navbar({ onOpenBooking }: NavbarProps) {
 
             {/* Desktop Actions */}
             <div className="hidden lg:flex items-center gap-4">
-              <a
-                href="#login"
-                className="text-sm font-bold text-gray-600 hover:text-gray-900 transition-colors"
-              >
-                Sign in
-              </a>
               <button
                 onClick={onOpenBooking}
                 className="flex items-center gap-2 rounded-[14px] bg-[#22c55e] hover:bg-[#16a34a] px-5 py-2.5 text-sm font-bold text-white shadow-sm hover:scale-102 active:scale-98 transition-all group"

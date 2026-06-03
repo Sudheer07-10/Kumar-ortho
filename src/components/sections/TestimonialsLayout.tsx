@@ -12,7 +12,7 @@ export default function Testimonials() {
       treatment: "Emergency Fracture Surgery",
       rating: 5,
       story:
-        "I was rushed to Kumar Hospital late at night after a major road accident with a severe compound leg fracture. Dr. Kumar operated immediately. His calm demeanor and surgical expertise saved my limb. Six months later, I am walking completely pain-free.",
+        "I was rushed to Kumar's Ortho Clinic late at night after a major road accident with a severe compound leg fracture. Dr. Kumar operated immediately. His calm demeanor and surgical expertise saved my limb. Six months later, I am walking completely pain-free.",
     },
     {
       name: "Lakshmi Devi",
@@ -36,7 +36,7 @@ export default function Testimonials() {
       treatment: "Emergency Sports Trauma",
       rating: 5,
       story:
-        "My son dislocated his shoulder during an inter-school sports match. The trauma team at Kumar Hospital was ready within minutes of our arrival. They relocated the joint under mild sedation quickly. Their responsiveness and affordable charges are highly commendable.",
+        "My son dislocated his shoulder during an inter-school sports match. The trauma team at Kumar's Ortho Clinic was ready within minutes of our arrival. They relocated the joint under mild sedation quickly. Their responsiveness and affordable charges are highly commendable.",
     },
   ];
 

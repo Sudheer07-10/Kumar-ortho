@@ -63,7 +63,7 @@ export default function About() {
               Established in 2021 with a Commitment to Quality Healing
             </h3>
             <p className="text-gray-600 dark:text-zinc-300 leading-relaxed">
-              At Kumar Ortho & Multi-Speciality Hospital, we believe that health is the foundation of a joyful life. We opened our doors in 2021 in Vidyuth Nagar, Anantapur, to address the growing need for specialized orthopedic and trauma care alongside broad-scope multi-speciality treatment.
+              At Kumar's Ortho Clinic, we believe that health is the foundation of a joyful life. We opened our doors in 2021 in Vidyuth Nagar, Anantapur, to address the growing need for specialized orthopedic and trauma care alongside broad-scope multi-speciality treatment.
             </p>
             <p className="text-gray-600 dark:text-zinc-300 leading-relaxed">
               Led by veteran practitioners and supported by empathetic staff, we combine cutting-edge technology with affordable pricing models. Whether managing emergency complex fractures or chronic clinical disorders, our priority is always your swift recovery and comfort.

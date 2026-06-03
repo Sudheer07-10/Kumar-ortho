@@ -8,32 +8,32 @@ export default function Facilities() {
     {
       title: "Orthopedic Excellence",
       desc: "Advanced care for fractures, joint disorders, trauma, and spine-related conditions.",
-      icon: <Bone className="h-6 w-6 text-blue-600 dark:text-blue-400" />,
+      icon: <Bone className="h-7 w-7" />,
     },
     {
       title: "Experienced Specialists",
       desc: "Dedicated consultants across orthopedics, medicine, surgery, urology, and women's health.",
-      icon: <Stethoscope className="h-6 w-6 text-blue-600 dark:text-blue-400" />,
+      icon: <Stethoscope className="h-7 w-7" />,
     },
     {
       title: "Accurate Diagnostics",
       desc: "Laboratory and imaging services supporting timely diagnosis and treatment.",
-      icon: <Microscope className="h-6 w-6 text-blue-600 dark:text-blue-400" />,
+      icon: <Microscope className="h-7 w-7" />,
     },
     {
       title: "Modern Medical Infrastructure",
       desc: "Well-equipped facilities designed to support safe and efficient patient care.",
-      icon: <Hospital className="h-6 w-6 text-blue-600 dark:text-blue-400" />,
+      icon: <Hospital className="h-7 w-7" />,
     },
     {
       title: "Emergency Support",
       desc: "Prompt medical attention and stabilization for urgent healthcare needs.",
-      icon: <Ambulance className="h-6 w-6 text-blue-600 dark:text-blue-400" />,
+      icon: <Ambulance className="h-7 w-7" />,
     },
     {
       title: "Compassionate Patient Care",
       desc: "Personalized treatment plans focused on comfort, recovery, and long-term wellness.",
-      icon: <Heart className="h-6 w-6 text-blue-600 dark:text-blue-400" />,
+      icon: <Heart className="h-7 w-7" />,
     },
   ];
 
@@ -64,14 +64,15 @@ export default function Facilities() {
               key={idx}
               initial={{ opacity: 0, y: 15 }}
               whileInView={{ opacity: 1, y: 0 }}
+              whileHover={{ y: -8 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: idx * 0.05 }}
-              className="group relative overflow-hidden rounded-[16px] bg-white dark:bg-zinc-900 p-8 border border-gray-200 dark:border-zinc-800 hover:border-gray-300 dark:hover:border-zinc-700 transition-all duration-300 flex flex-col justify-between min-h-[220px]"
+              className="group relative overflow-hidden rounded-[16px] bg-white dark:bg-zinc-900 p-8 border border-gray-200 dark:border-zinc-800 hover:border-transparent dark:hover:border-zinc-700 hover:shadow-2xl transition-all duration-300 flex flex-col justify-between min-h-[220px] cursor-pointer"
             >
               {/* Card top half */}
               <div className="relative z-10">
                 {/* Icon */}
-                <div className="mb-6 text-gray-900 dark:text-white group-hover:scale-105 transition-transform duration-500 ease-out">
+                <div className="mb-6 text-[#2563EB] group-hover:text-[#B24E39] group-hover:scale-125 group-hover:-translate-y-1 transition-all duration-300 ease-out inline-block">
                   {item.icon}
                 </div>
 

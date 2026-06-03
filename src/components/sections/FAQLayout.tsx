@@ -49,7 +49,7 @@ export default function FAQ() {
               <span>Frequently</span><br className="hidden lg:block" /> <span>Asked Questions</span>
             </h2>
             <p className="text-[15px] text-gray-500 dark:text-zinc-400 leading-relaxed max-w-md">
-              Common questions about how Kumar Hospital works, what&apos;s included, and how to get started. If you don&apos;t find your answer here, reach out at <a href="mailto:contact@kumarhospital.com" className="underline hover:text-gray-900 dark:hover:text-gray-300 transition-colors">contact@kumarhospital.com</a> and we&apos;ll get back to you quickly.
+              Common questions about how Kumar's Ortho Clinic works, what&apos;s included, and how to get started. If you don&apos;t find your answer here, reach out at <a href="mailto:contact@kumarhospital.com" className="underline hover:text-gray-900 dark:hover:text-gray-300 transition-colors">contact@kumarhospital.com</a> and we&apos;ll get back to you quickly.
             </p>
           </div>
 

@@ -20,49 +20,49 @@ export default function Services({ onOpenBooking }: ServicesProps) {
     {
       title: "Orthopedics & Spine",
       icon: (
-        <Bone className="h-10 w-10 text-[#0B1F3A] mb-4 stroke-[1.5]" />
+        <Bone className="h-10 w-10 text-[#0B1F3A] mb-4 stroke-[1.5] group-hover:scale-125 group-hover:-translate-y-2 group-hover:text-[#B24E39] transition-all duration-300" />
       ),
     },
     {
       title: "Cardiology",
       icon: (
-        <Heart className="h-10 w-10 text-[#0B1F3A] mb-4 stroke-[1.5]" />
+        <Heart className="h-10 w-10 text-[#0B1F3A] mb-4 stroke-[1.5] group-hover:scale-125 group-hover:-translate-y-2 group-hover:text-[#B24E39] transition-all duration-300" />
       ),
     },
     {
       title: "Urology",
       icon: (
-        <Activity className="h-10 w-10 text-[#0B1F3A] mb-4 stroke-[1.5]" />
+        <Activity className="h-10 w-10 text-[#0B1F3A] mb-4 stroke-[1.5] group-hover:scale-125 group-hover:-translate-y-2 group-hover:text-[#B24E39] transition-all duration-300" />
       ),
     },
     {
       title: "General Medicine",
       icon: (
-        <Stethoscope className="h-10 w-10 text-[#0B1F3A] mb-4 stroke-[1.5]" />
+        <Stethoscope className="h-10 w-10 text-[#0B1F3A] mb-4 stroke-[1.5] group-hover:scale-125 group-hover:-translate-y-2 group-hover:text-[#B24E39] transition-all duration-300" />
       ),
     },
     {
       title: "General Surgery",
       icon: (
-        <Scissors className="h-10 w-10 text-[#0B1F3A] mb-4 stroke-[1.5]" />
+        <Scissors className="h-10 w-10 text-[#0B1F3A] mb-4 stroke-[1.5] group-hover:scale-125 group-hover:-translate-y-2 group-hover:text-[#B24E39] transition-all duration-300" />
       ),
     },
     {
       title: "Pediatrics",
       icon: (
-        <UserCheck className="h-10 w-10 text-[#0B1F3A] mb-4 stroke-[1.5]" />
+        <UserCheck className="h-10 w-10 text-[#0B1F3A] mb-4 stroke-[1.5] group-hover:scale-125 group-hover:-translate-y-2 group-hover:text-[#B24E39] transition-all duration-300" />
       ),
     },
     {
       title: "Women's Health",
       icon: (
-        <Activity className="h-10 w-10 text-[#0B1F3A] mb-4 stroke-[1.5]" />
+        <Activity className="h-10 w-10 text-[#0B1F3A] mb-4 stroke-[1.5] group-hover:scale-125 group-hover:-translate-y-2 group-hover:text-[#B24E39] transition-all duration-300" />
       ),
     },
     {
       title: "Diagnostics & Imaging",
       icon: (
-        <Eye className="h-10 w-10 text-[#0B1F3A] mb-4 stroke-[1.5]" />
+        <Eye className="h-10 w-10 text-[#0B1F3A] mb-4 stroke-[1.5] group-hover:scale-125 group-hover:-translate-y-2 group-hover:text-[#B24E39] transition-all duration-300" />
       ),
     },
   ];
@@ -96,12 +96,13 @@ export default function Services({ onOpenBooking }: ServicesProps) {
                 key={idx}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
+                whileHover={{ y: -8 }}
                 viewport={{ once: true }}
                 transition={{
-                  duration: 0.5,
+                  duration: 0.4,
                   delay: idx * 0.05,
                 }}
-                className="group flex flex-col items-center justify-center p-8 sm:p-12 lg:p-14 bg-white hover:bg-[#F9FAFB] transition-all duration-300 cursor-pointer"
+                className="group relative flex flex-col items-center justify-center p-8 sm:p-12 lg:p-14 bg-white hover:bg-white hover:z-10 hover:shadow-2xl transition-all duration-300 cursor-pointer"
               >
                 {spec.icon}
 
@@ -116,8 +117,7 @@ export default function Services({ onOpenBooking }: ServicesProps) {
         {/* CTA Section */}
         <div className="mt-20 w-full bg-[#B24E39] rounded-[28px] sm:rounded-[36px] p-12 sm:p-16 lg:p-24 flex flex-col items-center justify-center text-center shadow-xl">
           <h3 className="text-3xl sm:text-4xl lg:text-5xl font-serif text-white max-w-4xl leading-[1.1] mb-10 tracking-tight">
-            The trusted healthcare infrastructure for building and deploying
-            safe clinical care.
+            Trusted healthcare services focused on patient safety and quality care.
           </h3>
 
           <button

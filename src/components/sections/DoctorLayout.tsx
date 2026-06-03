@@ -88,7 +88,7 @@ export default function Doctor({ onOpenBooking }: DoctorProps) {
                 {/* Hollow Pill Button */}
                 <button
                   onClick={onOpenBooking}
-                  className="w-full py-3 rounded-full border border-gray-900 dark:border-zinc-700 text-[13px] font-bold text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-zinc-900 transition-colors"
+                  className="w-full py-3 rounded-full border border-gray-900 dark:border-zinc-700 text-[13px] font-bold text-gray-900 dark:text-white hover:bg-[#B24E39] hover:border-[#B24E39] hover:text-white dark:hover:text-white hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
                 >
                   Book Consult
                 </button>

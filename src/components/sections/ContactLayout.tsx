@@ -29,7 +29,7 @@ export default function Contact() {
           </h2>
           <div className="h-1 w-20 bg-blue-500 mx-auto mt-4 rounded-full" />
           <p className="text-gray-500 dark:text-zinc-400 mt-4 text-sm sm:text-base">
-            Easily navigate to Kumar Hospital in Anantapur. Find precise driving directions, parking layout, and quick contact details.
+            Easily navigate to Kumar's Ortho Clinic in Anantapur. Find precise driving directions, parking layout, and quick contact details.
           </p>
         </div>
 
@@ -47,7 +47,7 @@ export default function Contact() {
                 allowFullScreen={true}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Kumar Hospital Google Map"
+                title="Kumar's Ortho Clinic Google Map"
                 className="transition-transform duration-700 group-hover:scale-[1.01]"
               ></iframe>
               
@@ -78,7 +78,7 @@ export default function Contact() {
               
               <h3 className="text-xl font-extrabold text-[#0B1F3A] dark:text-white mb-2">Hospital Campus</h3>
               <p className="text-xs sm:text-sm text-gray-500 dark:text-zinc-400 leading-relaxed mb-4">
-                Kumar Hospital is easily accessible for patients coming from all corners of Anantapur District.
+                Kumar's Ortho Clinic is easily accessible for patients coming from all corners of Anantapur District.
               </p>
               
               <address className="not-italic text-sm text-[#0B1F3A] dark:text-zinc-200 font-semibold leading-relaxed border-t border-gray-100 dark:border-zinc-800 pt-4">

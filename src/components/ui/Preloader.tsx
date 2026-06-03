@@ -49,7 +49,7 @@ export default function Preloader({ onComplete }: { onComplete: () => void }) {
             <Activity className="h-9 w-9 stroke-[2.5]" />
           </div>
           <div className="text-center">
-            <h1 className="text-2xl font-black tracking-widest text-white">KUMAR ORTHO</h1>
+            <h1 className="text-2xl font-black tracking-widest text-white">KUMAR'S ORTHO</h1>
             <p className="text-[10px] tracking-widest text-teal-300 font-bold uppercase mt-1">Multi-Speciality Hospital</p>
           </div>
         </motion.div>

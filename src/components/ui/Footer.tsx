@@ -7,7 +7,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-[#0b1626] text-slate-300 font-sans border-t border-slate-800/80 relative overflow-hidden py-3 sm:py-4 w-full">
+    <footer className="bg-[#0b1626] text-slate-300 font-sans border-t border-slate-800/80 relative overflow-hidden py-3 sm:py-4">
       {/* Subtle background glow effect */}
       <div className="absolute top-0 left-1/4 w-[250px] h-[250px] bg-blue-500/5 rounded-full blur-3xl pointer-events-none" />
       
@@ -19,13 +19,13 @@ export default function Footer() {
           {/* Hospital Logo & Title */}
           <div className="flex items-center gap-3">
             <img
-              src="/kumar-hospitals.png"
-              alt="Kumar Hospital Logo"
+              src="/kumar-hospitals.svg"
+              alt="Kumar's Ortho Clinic Logo"
               className="h-12 w-auto object-contain"
             />
             <div className="h-5 w-[1px] bg-slate-700/50 hidden sm:block" />
             <span className="text-xs sm:text-sm font-bold text-white tracking-wide whitespace-nowrap">
-              Kumar Ortho & Multispeciality Hospital
+              Kumar's Ortho Clinic
             </span>
           </div>
 
@@ -79,7 +79,7 @@ export default function Footer() {
 
         {/* Minimal Bottom Bar */}
         <div className="border-t border-slate-800/40 pt-2 flex items-center justify-between text-[10px] text-slate-500 font-medium">
-          <p>© Kumar Hospital, Anantapur. All Rights Reserved.</p>
+          <p>© Kumar's Ortho Clinic, Anantapur. All Rights Reserved.</p>
         </div>
 
       </div>

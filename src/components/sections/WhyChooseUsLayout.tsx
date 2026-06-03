@@ -32,7 +32,7 @@ export default function WhyChooseUs() {
         {/* Section Header */}
         <div className="mb-12">
           <h2 className="text-4xl sm:text-5xl lg:text-[54px] font-serif text-[#111111] dark:text-white font-medium tracking-tight leading-[1.1]">
-            Why Kumar Hospital
+            Why Kumar's Ortho Clinic
           </h2>
         </div>
 

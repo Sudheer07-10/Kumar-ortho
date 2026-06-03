@@ -1,21 +1,21 @@
 "use client";
 
 import { useState } from "react";
-import Navbar from "@/tier1-components/Navbar";
-import Footer from "@/tier1-components/Footer";
-import AppointmentModal from "@/tier1-components/AppointmentModal";
-import EmergencyFloating from "@/tier1-components/EmergencyFloating";
-import Preloader from "@/tier1-components/Preloader";
+import Navbar from "@/components/ui/Navbar";
+import Footer from "@/components/ui/Footer";
+import AppointmentModal from "@/components/ui/AppointmentModal";
+import EmergencyFloating from "@/components/ui/EmergencyFloating";
+import Preloader from "@/components/ui/Preloader";
 
 // Selected Sections
-import Hero from "@/tier2-layouts/HeroLayout";
-import Services from "@/tier2-layouts/ServicesLayout";
-import Doctor from "@/tier2-layouts/DoctorLayout";
-import WhyChooseUs from "@/tier2-layouts/WhyChooseUsLayout";
-import Facilities from "@/tier2-layouts/FacilitiesLayout";
-import AppointmentBooking from "@/tier2-layouts/AppointmentBookingLayout";
-import FAQ from "@/tier2-layouts/FAQLayout";
-import Contact from "@/tier2-layouts/ContactLayout";
+import Hero from "@/components/sections/HeroLayout";
+import Services from "@/components/sections/ServicesLayout";
+import Doctor from "@/components/sections/DoctorLayout";
+import WhyChooseUs from "@/components/sections/WhyChooseUsLayout";
+import Facilities from "@/components/sections/FacilitiesLayout";
+import AppointmentBooking from "@/components/sections/AppointmentBookingLayout";
+import FAQ from "@/components/sections/FAQLayout";
+import Contact from "@/components/sections/ContactLayout";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
