@@ -19,7 +19,7 @@ export default function Footer() {
           {/* Hospital Logo & Title */}
           <div className="flex items-center gap-3">
             <img
-              src="/kumar-hospitals.png"
+              src="/kumar-hospitals.svg"
               alt="Kumar Hospital Logo"
               className="h-12 w-auto object-contain"
             />

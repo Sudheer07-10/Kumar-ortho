@@ -12,7 +12,8 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-14 bg-[#F8FAFC] dark:bg-zinc-950 font-sans relative overflow-hidden">
+    <section id="contact" className="bg-white dark:bg-zinc-950 font-sans px-0 sm:px-4 pb-16 flex flex-col items-center overflow-hidden">
+      <div className="relative w-full max-w-[1440px] rounded-[0px] sm:rounded-[40px] overflow-hidden bg-gradient-to-br from-[#F8FAFC] to-white dark:from-zinc-900 dark:to-zinc-850 pt-16 pb-16">
       {/* Background Decorative Accents */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-blue-400/5 rounded-full blur-3xl pointer-events-none" />
 
@@ -64,45 +65,6 @@ export default function Contact() {
               </div>
             </div>
 
-            {/* Directions & Key Landmarks Panel */}
-            <div className="bg-white dark:bg-zinc-900 p-6 sm:p-8 rounded-[32px] border border-gray-150 dark:border-zinc-800 shadow-md">
-              <h3 className="text-lg font-extrabold text-[#0B1F3A] dark:text-white mb-4 flex items-center gap-2">
-                <Compass className="h-5 w-5 text-blue-600" />
-                <span>How to Reach Kumar Hospital</span>
-              </h3>
-              
-              <div className="space-y-4 text-xs sm:text-sm text-gray-600 dark:text-zinc-300">
-                <div className="flex gap-3.5 items-start">
-                  <div className="h-5 w-5 rounded-full bg-blue-50 dark:bg-blue-900/30 flex items-center justify-center font-bold text-[10px] text-blue-600 mt-0.5 flex-shrink-0">
-                    1
-                  </div>
-                  <div>
-                    <strong className="text-[#0B1F3A] dark:text-white block font-bold mb-0.5">From Anantapur RTC Bus Stand (Approx. 2.5 km)</strong>
-                    Take the 80 Feet Road directly heading towards Vidyuth Nagar. Head straight past the Housing Board Colony arch. The hospital is prominently located on the main double road.
-                  </div>
-                </div>
-
-                <div className="flex gap-3.5 items-start">
-                  <div className="h-5 w-5 rounded-full bg-blue-50 dark:bg-blue-900/30 flex items-center justify-center font-bold text-[10px] text-blue-600 mt-0.5 flex-shrink-0">
-                    2
-                  </div>
-                  <div>
-                    <strong className="text-[#0B1F3A] dark:text-white block font-bold mb-0.5">From Anantapur Railway Station (Approx. 3.5 km)</strong>
-                    Head north-east on Station Road towards Subash Road, join the main bypass line, then take the immediate left onto the Vidyuth Nagar double road junction.
-                  </div>
-                </div>
-
-                <div className="flex gap-3.5 items-start">
-                  <div className="h-5 w-5 rounded-full bg-blue-50 dark:bg-blue-900/30 flex items-center justify-center font-bold text-[10px] text-blue-600 mt-0.5 flex-shrink-0">
-                    3
-                  </div>
-                  <div>
-                    <strong className="text-[#0B1F3A] dark:text-white block font-bold mb-0.5">Key Landmarks</strong>
-                    Right adjacent to the Vidyuth Nagar Housing Board Park, next to the main electrical substation avenue. Look for the large prominent modern blue Kumar Hospital glow sign boards.
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
 
           {/* Right Column: Address, Contact Info, Parking Layout (5/12 cols) */}
@@ -120,9 +82,9 @@ export default function Contact() {
               </p>
               
               <address className="not-italic text-sm text-[#0B1F3A] dark:text-zinc-200 font-semibold leading-relaxed border-t border-gray-100 dark:border-zinc-800 pt-4">
-                12-4, 80 Feet Road,<br />
-                Vidyuth Nagar, Housing Board Colony,<br />
-                Anantapur, Andhra Pradesh - 515001, India
+                <span>12-4, 80 Feet Road,</span><br />
+                <span>Vidyuth Nagar, Housing Board Colony,</span><br />
+                <span>Anantapur, Andhra Pradesh - 515001, India</span>
               </address>
 
               <div className="mt-6 flex flex-col sm:flex-row gap-3">
@@ -134,29 +96,6 @@ export default function Contact() {
                   <ExternalLink className="h-3.5 w-3.5" />
                 </button>
               </div>
-            </div>
-
-            {/* Parking & Accessibility layout */}
-            <div className="bg-[#EAF3FF]/60 dark:bg-zinc-900 p-6 rounded-[32px] border border-blue-100 dark:border-zinc-800 shadow-sm">
-              <h4 className="text-sm font-extrabold text-[#0B1F3A] dark:text-white mb-3.5 flex items-center gap-2">
-                <Car className="h-4.5 w-4.5 text-blue-600" />
-                <span>Parking &amp; Accessibility</span>
-              </h4>
-              
-              <ul className="space-y-2.5 text-xs text-gray-600 dark:text-zinc-400">
-                <li className="flex items-start gap-2">
-                  <span className="text-blue-500 font-bold mt-0.5">•</span>
-                  <span><strong>Dedicated Safe Parking:</strong> Free spacious car and two-wheeler parking spaces are available directly in front of the primary hospital block.</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-blue-500 font-bold mt-0.5">•</span>
-                  <span><strong>Emergency Trauma Access:</strong> Specialized dedicated wide ambulance bays and ramps for immediate stretcher wheeling.</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-blue-500 font-bold mt-0.5">•</span>
-                  <span><strong>Wheelchair Friendly:</strong> Step-free entrance, elevators, and specially designed restrooms are available throughout all clinic levels.</span>
-                </li>
-              </ul>
             </div>
 
             {/* Consulting Hours & Direct Phone/WhatsApp Anchors */}
@@ -202,6 +141,7 @@ export default function Contact() {
 
         </div>
 
+        </div>
       </div>
     </section>
   );

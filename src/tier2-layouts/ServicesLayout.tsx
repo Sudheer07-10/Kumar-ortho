@@ -1,8 +1,15 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ChevronRight, Heart, Bone, Activity, Stethoscope, Scissors, UserCheck, Eye } from "lucide-react";
-import Image from "next/image";
+import {
+  Heart,
+  Bone,
+  Activity,
+  Stethoscope,
+  Scissors,
+  UserCheck,
+  Eye,
+} from "lucide-react";
 
 interface ServicesProps {
   onOpenBooking: () => void;
@@ -12,125 +19,114 @@ export default function Services({ onOpenBooking }: ServicesProps) {
   const specialties = [
     {
       title: "Orthopedics & Spine",
-      icon: <Bone className="h-6 w-6 text-blue-600" />,
-      desc: "Comprehensive bone, joint, and spine reconstructions driven by advanced orthopedic surgical protocols.",
-      img: "/images/operating_room.png"
+      icon: (
+        <Bone className="h-10 w-10 text-[#0B1F3A] mb-4 stroke-[1.5]" />
+      ),
     },
     {
       title: "Cardiology",
-      icon: <Heart className="h-6 w-6 text-red-500" />,
-      desc: "Preventive, diagnostic, and clinical cardiac consultations to secure your heart's vital rhythm.",
-      img: "/images/cardiology.png"
+      icon: (
+        <Heart className="h-10 w-10 text-[#0B1F3A] mb-4 stroke-[1.5]" />
+      ),
     },
     {
       title: "Urology",
-      icon: <Activity className="h-6 w-6 text-indigo-500" />,
-      desc: "Expert treatment for kidney stones, prostate health, and urinary tract wellness conditions.",
-      img: "/images/urology.png"
+      icon: (
+        <Activity className="h-10 w-10 text-[#0B1F3A] mb-4 stroke-[1.5]" />
+      ),
     },
     {
       title: "General Medicine",
-      icon: <Stethoscope className="h-6 w-6 text-teal-500" />,
-      desc: "Systemic care managing chronic diabetes, blood pressure, fever, and metabolic disorders.",
-      img: "/images/general_medicine.png"
+      icon: (
+        <Stethoscope className="h-10 w-10 text-[#0B1F3A] mb-4 stroke-[1.5]" />
+      ),
     },
     {
       title: "General Surgery",
-      icon: <Scissors className="h-6 w-6 text-amber-500" />,
-      desc: "Minimally invasive keyhole and open surgical care managed under maximum sterile conditions.",
-      img: "/images/general_surgery.png"
+      icon: (
+        <Scissors className="h-10 w-10 text-[#0B1F3A] mb-4 stroke-[1.5]" />
+      ),
     },
     {
       title: "Pediatrics",
-      icon: <UserCheck className="h-6 w-6 text-pink-500" />,
-      desc: "Compassionate, gentle healthcare programs serving infants, kids, and adolescents.",
-      img: "/images/pediatrics.png"
+      icon: (
+        <UserCheck className="h-10 w-10 text-[#0B1F3A] mb-4 stroke-[1.5]" />
+      ),
     },
     {
       title: "Women's Health",
-      icon: <Activity className="h-6 w-6 text-purple-500" />,
-      desc: "Comprehensive gynecological checkups, prenatal guidance, and maternal health care.",
-      img: "/images/womens_health.png"
+      icon: (
+        <Activity className="h-10 w-10 text-[#0B1F3A] mb-4 stroke-[1.5]" />
+      ),
     },
     {
       title: "Diagnostics & Imaging",
-      icon: <Eye className="h-6 w-6 text-blue-500" />,
-      desc: "Instant high-definition in-house X-Rays, path labs, and precision ultrasound screenings.",
-      img: "/images/diagnostics.png"
-    }
+      icon: (
+        <Eye className="h-10 w-10 text-[#0B1F3A] mb-4 stroke-[1.5]" />
+      ),
+    },
   ];
 
   return (
-    <section id="services" className="pt-10 pb-4 bg-white dark:bg-zinc-900 font-sans relative overflow-hidden">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        
+    <section
+      id="services"
+      className="bg-white text-black opacity-100 brightness-100 px-4 sm:px-6 lg:px-8 py-24 flex flex-col items-center overflow-hidden"
+
+    >
+      <div className="w-full max-w-6xl mx-auto flex flex-col items-center">
+
         {/* Section Header */}
-        <div className="text-left max-w-3xl mb-12">
-          <span className="text-xs font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20 px-3 py-1.5 rounded-md">
-            Centers of Excellence
+        <div className="text-center mb-20 flex flex-col items-center px-4">
+          <span className="text-[10px] sm:text-xs uppercase tracking-[0.25em] text-[#6B7280] mb-6">
+            CENTERS OF EXCELLENCE.
           </span>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0B1F3A] dark:text-white mt-4 tracking-tight">
-            Our Medical Specialties
+
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-[60px] font-serif text-[#111111] tracking-tight leading-[1.05] max-w-5xl text-center">
+            We provide high-quality medical services across key healthcare
+            disciplines with uncompromised therapeutic safety.
           </h2>
-          <div className="h-1 w-20 bg-blue-500 mt-4 rounded-full" />
-          <p className="text-gray-555 dark:text-zinc-440 mt-4 text-sm sm:text-base">
-            Providing high-quality medical services across key healthcare disciplines with uncompromised therapeutic safety.
-          </p>
         </div>
 
-        {/* Grid Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
-          {specialties.map((spec, idx) => (
-            <motion.div
-              key={idx}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: idx * 0.05 }}
-              className="group relative overflow-hidden rounded-[24px] bg-[#F8FAFC] dark:bg-zinc-850 border border-gray-150 dark:border-zinc-800 shadow-sm transition-all duration-300 hover:shadow-xl hover:border-blue-200 cursor-pointer flex flex-col justify-between min-h-[360px]"
-            >
-              {/* Specialty Image container with zoom effect */}
-              <div className="relative w-full h-[160px] overflow-hidden">
-                <Image
-                  src={spec.img}
-                  alt={spec.title}
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-110"
-                  sizes="(max-w-780px) 100vw, 280px"
-                />
-                <div className="absolute inset-0 bg-[#0B1F3A]/20" />
-                <div className="absolute top-4 left-4 h-10 w-10 rounded-xl bg-white/90 backdrop-blur-md flex items-center justify-center shadow-md">
-                  {spec.icon}
-                </div>
-              </div>
+        {/* Services Grid */}
+        <div className="w-full border-t border-[#D1D5DB]">
+          <div className="grid grid-cols-2 md:grid-cols-4 border-l border-r border-b border-[#D1D5DB] divide-x divide-y divide-[#D1D5DB]">
 
-              {/* Text Area */}
-              <div className="p-5 flex-1 flex flex-col justify-between">
-                <div>
-                  <h3 className="text-lg font-bold text-[#0B1F3A] dark:text-white mb-2 group-hover:text-blue-600 transition-colors">
-                    {spec.title}
-                  </h3>
-                  <p className="text-xs text-gray-500 dark:text-zinc-400 leading-relaxed line-clamp-3">
-                    {spec.desc}
-                  </p>
-                </div>
+            {specialties.map((spec, idx) => (
+              <motion.div
+                key={idx}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{
+                  duration: 0.5,
+                  delay: idx * 0.05,
+                }}
+                className="group flex flex-col items-center justify-center p-8 sm:p-12 lg:p-14 bg-white hover:bg-[#F9FAFB] transition-all duration-300 cursor-pointer"
+              >
+                {spec.icon}
 
-                <div className="pt-4 flex items-center justify-between border-t border-gray-150/60 dark:border-zinc-800">
-                  <button
-                    onClick={onOpenBooking}
-                    className="inline-flex items-center gap-1 text-[11px] font-bold text-blue-600 hover:text-blue-700 transition-colors uppercase tracking-wider"
-                  >
-                    <span>Book Consult</span>
-                    <ChevronRight className="h-3 w-3 stroke-[2.5]" />
-                  </button>
-                  <span className="text-[10px] font-semibold text-gray-400">Apollo Standards</span>
-                </div>
-              </div>
-
-            </motion.div>
-          ))}
+                <h3 className="text-[13px] sm:text-sm font-semibold text-[#0B1F3A] text-center tracking-tight group-hover:text-[#2563EB] transition-colors">
+                  {spec.title}
+                </h3>
+              </motion.div>
+            ))}
+          </div>
         </div>
 
+        {/* CTA Section */}
+        <div className="mt-20 w-full bg-[#B24E39] rounded-[28px] sm:rounded-[36px] p-12 sm:p-16 lg:p-24 flex flex-col items-center justify-center text-center shadow-xl">
+          <h3 className="text-3xl sm:text-4xl lg:text-5xl font-serif text-white max-w-4xl leading-[1.1] mb-10 tracking-tight">
+            The trusted healthcare infrastructure for building and deploying
+            safe clinical care.
+          </h3>
+
+          <button
+            onClick={onOpenBooking}
+            className="bg-white text-[#B24E39] hover:bg-[#F5F5F5] font-semibold text-sm px-7 py-3 rounded-xl transition-all duration-300 shadow-sm"
+          >
+            Book an Appointment
+          </button>
+        </div>
       </div>
     </section>
   );

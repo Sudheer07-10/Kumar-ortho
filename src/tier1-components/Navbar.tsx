@@ -48,22 +48,22 @@ export default function Navbar({ onOpenBooking }: NavbarProps) {
         )}
       />
 
-      <div className="w-full px-4 pt-4 sm:pt-6 relative z-10">
-        {/* Floating Pill Navbar Wrapper */}
+      <div className="w-full flex justify-center relative z-10 top-0 pt-0 px-4 sm:px-6">
+        {/* Island Cutout Navbar Wrapper */}
         <div
           className={cn(
-            "mx-auto w-full max-w-[1440px] rounded-full bg-[#0a0a0c]/90 text-white border border-zinc-800/80 shadow-2xl backdrop-blur-md transition-all duration-300 relative overflow-hidden pointer-events-auto",
-            isScrolled ? "py-2 sm:py-2.5 px-5 sm:px-6 shadow-zinc-950/50" : "py-3 sm:py-4 px-6 sm:px-8"
+            "navbar-cutout w-full max-w-[1100px] text-[#0B1F3A] transition-all duration-300 pointer-events-auto",
+            isScrolled ? "py-2 sm:py-3 shadow-md" : "py-3 sm:py-4"
           )}
         >
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-between px-6 sm:px-10">
             
             {/* Combined Logo Capsule */}
             <a href="#home" className="flex items-center group">
               <img
-                src="/kumar-hospitals.png"
+                src="/kumar-hospitals.svg"
                 alt="Kumar Hospital Ortho & Multispeciality"
-                className="h-20 w-auto object-contain hover:scale-[1.03] transition-transform duration-300"
+                className="h-16 sm:h-20 w-auto object-contain hover:scale-[1.03] transition-transform duration-300 transform scale-125 origin-left"
               />
             </a>
 
@@ -73,7 +73,7 @@ export default function Navbar({ onOpenBooking }: NavbarProps) {
                 <a
                   key={link.name}
                   href={link.href}
-                  className="text-xs font-bold uppercase tracking-widest text-zinc-300 hover:text-cyan-400 transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:w-0 after:bg-cyan-400 after:transition-all hover:after:w-full"
+                  className="text-xs font-bold uppercase tracking-widest text-gray-700 hover:text-emerald-600 transition-colors relative after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:w-0 after:bg-emerald-500 after:transition-all hover:after:w-full"
                 >
                   {link.name}
                 </a>
@@ -81,40 +81,32 @@ export default function Navbar({ onOpenBooking }: NavbarProps) {
             </nav>
 
             {/* Desktop Actions */}
-            <div className="hidden lg:flex items-center gap-3">
+            <div className="hidden lg:flex items-center gap-4">
               <a
-                href={`tel:${content.layout.navbar.actions.emergencyPhone}`}
-                className="flex items-center gap-2 rounded-full border border-red-500/25 bg-red-950/20 px-4 py-2 text-xs font-bold text-red-400 transition-all hover:bg-red-950/40 hover:scale-102 active:scale-98"
+                href="#login"
+                className="text-sm font-bold text-gray-600 hover:text-gray-900 transition-colors"
               >
-                <Phone className="h-3.5 w-3.5" />
-                <span>{content.layout.navbar.actions.emergencyText}</span>
+                Sign in
               </a>
-              
               <button
                 onClick={onOpenBooking}
-                className="flex items-center gap-2 rounded-full bg-cyan-600 hover:bg-cyan-700 px-5 py-2.5 text-xs font-bold text-white shadow-lg shadow-cyan-600/10 hover:scale-102 active:scale-98 transition-all group"
+                className="flex items-center gap-2 rounded-[14px] bg-[#22c55e] hover:bg-[#16a34a] px-5 py-2.5 text-sm font-bold text-white shadow-sm hover:scale-102 active:scale-98 transition-all group"
               >
                 <span>{content.layout.navbar.actions.bookAppointmentText}</span>
-                <ArrowRight className="h-3.5 w-3.5 group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </button>
             </div>
 
             {/* Mobile Menu Toggle */}
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="rounded-full p-2 text-zinc-300 transition-colors hover:bg-zinc-800 lg:hidden"
+              className="rounded-full p-2 text-gray-800 transition-colors hover:bg-gray-100 lg:hidden"
               aria-label="Toggle menu"
             >
               {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
             </button>
 
           </div>
-
-          {/* Floating Progress Line on the Bottom Border of the Pill */}
-          <motion.div
-            className="absolute bottom-0 left-0 right-0 h-[2px] bg-gradient-to-r from-teal-500 to-teal-300 origin-[0%]"
-            style={{ scaleX }}
-          />
         </div>
       </div>
 

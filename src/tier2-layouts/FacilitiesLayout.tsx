@@ -38,60 +38,53 @@ export default function Facilities() {
   ];
 
   return (
-    <section id="facilities" className="pt-10 pb-4 bg-white dark:bg-zinc-900 font-sans relative overflow-hidden">
-      {/* Background soft glow decors */}
-      <div className="absolute top-10 right-10 w-80 h-80 bg-blue-500/5 rounded-full blur-3xl pointer-events-none" />
+    <section
+      id="facilities"
+      className="bg-white text-black opacity-100 brightness-100 px-4 sm:px-6 lg:px-8 py-24 flex flex-col items-center overflow-hidden"
+    >
+      <div className="w-full max-w-5xl mx-auto flex flex-col">
 
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-xs font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20 px-3 py-1.5 rounded-md">
-            ADVANCED INFRASTRUCTURE
+        <div className="mb-16 flex flex-col px-4 text-left">
+          <span className="text-[10px] font-bold uppercase tracking-widest text-gray-500 mb-6">
+            INFRASTRUCTURE
           </span>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0B1F3A] dark:text-white mt-4 tracking-tight">
-            Advanced Facilities Designed Around Patient Care
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-[54px] font-serif text-[#111111] dark:text-white font-medium tracking-tight leading-[1.1] max-w-3xl mb-4">
+            Advanced facilities designed around patient care
           </h2>
-          <div className="h-1 w-20 bg-blue-500 mx-auto mt-4 rounded-full" />
-          <p className="text-gray-500 dark:text-zinc-400 mt-4 text-sm sm:text-base leading-relaxed">
+          <p className="text-sm sm:text-base text-gray-500 dark:text-zinc-400 max-w-2xl">
             Review the clinical setups engineered to ensure sterile compliance, diagnostics speed, and complete patient comfort.
           </p>
         </div>
 
-        {/* 6 Custom Context Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        {/* Custom Context Cards Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
           {items.map((item, idx) => (
             <motion.div
               key={idx}
-              initial={{ opacity: 0, y: 35 }}
+              initial={{ opacity: 0, y: 15 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: idx * 0.08, ease: [0.16, 1, 0.3, 1] }}
-              className="group relative overflow-hidden rounded-[24px] bg-gradient-to-br from-white to-[#F8FAFC] dark:from-zinc-900 dark:to-zinc-850 p-8 border border-slate-100 dark:border-zinc-800 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] hover:shadow-[0_20px_40px_-15px_rgba(37,99,235,0.12)] hover:border-blue-400/30 dark:hover:border-blue-500/30 transition-all duration-500 flex flex-col justify-between min-h-[250px]"
+              transition={{ duration: 0.5, delay: idx * 0.05 }}
+              className="group relative overflow-hidden rounded-[16px] bg-white dark:bg-zinc-900 p-8 border border-gray-200 dark:border-zinc-800 hover:border-gray-300 dark:hover:border-zinc-700 transition-all duration-300 flex flex-col justify-between min-h-[220px]"
             >
-              {/* Subtle background glow on hover */}
-              <div className="absolute -right-16 -top-16 w-32 h-32 bg-blue-500/5 dark:bg-blue-400/5 rounded-full blur-2xl group-hover:bg-blue-500/10 dark:group-hover:bg-blue-400/10 transition-all duration-500 pointer-events-none" />
-
               {/* Card top half */}
               <div className="relative z-10">
-                {/* Icon Capsule */}
-                <div className="mb-6 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-50 dark:bg-blue-950/40 text-blue-600 dark:text-blue-400 shadow-sm group-hover:scale-110 group-hover:bg-blue-600 group-hover:text-white dark:group-hover:bg-blue-500 dark:group-hover:text-white transition-all duration-500 ease-out">
+                {/* Icon */}
+                <div className="mb-6 text-gray-900 dark:text-white group-hover:scale-105 transition-transform duration-500 ease-out">
                   {item.icon}
                 </div>
-                
+
                 {/* Title */}
-                <h3 className="text-xl font-bold text-[#0B1F3A] dark:text-white mb-3 leading-snug group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300">
+                <h3 className="text-[17px] font-bold text-[#111111] dark:text-white mb-2 leading-snug">
                   {item.title}
                 </h3>
-                
+
                 {/* Description */}
-                <p className="text-sm text-slate-500 dark:text-zinc-400 leading-relaxed font-medium">
+                <p className="text-[13px] text-gray-500 dark:text-zinc-400 leading-relaxed font-medium">
                   {item.desc}
                 </p>
               </div>
-
-              {/* Design line indicator */}
-              <div className="relative z-10 w-10 h-[3px] bg-blue-500/20 dark:bg-blue-400/20 group-hover:bg-blue-600 dark:group-hover:bg-blue-450 group-hover:w-20 transition-all duration-500 mt-6 rounded-full" />
             </motion.div>
           ))}
         </div>

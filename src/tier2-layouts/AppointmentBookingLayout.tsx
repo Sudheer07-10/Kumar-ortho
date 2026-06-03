@@ -53,7 +53,8 @@ export default function AppointmentBooking() {
   };
 
   return (
-    <section id="booking-section" className="pt-10 pb-4 bg-white dark:bg-zinc-900 font-sans relative overflow-hidden">
+    <section id="booking-section" className="bg-white dark:bg-zinc-950 font-sans px-0 sm:px-4 pb-16 flex flex-col items-center overflow-hidden">
+      <div className="relative w-full max-w-[1440px] rounded-[0px] sm:rounded-[40px] overflow-hidden bg-gradient-to-br from-blue-50/40 via-teal-50/20 to-indigo-50/40 dark:from-zinc-900 dark:via-zinc-850 dark:to-zinc-900 pt-16 pb-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
@@ -270,6 +271,7 @@ export default function AppointmentBooking() {
             </div>
           </div>
 
+        </div>
         </div>
       </div>
     </section>
