@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Calendar, Phone, User, Stethoscope, Clock, CheckCircle, MessageSquare, ShieldCheck } from "lucide-react";
-import { supabase } from "@/lib/supabase";
 
 export default function AppointmentBooking() {
   const [formData, setFormData] = useState({
@@ -25,20 +24,12 @@ export default function AppointmentBooking() {
       return;
     }
     setIsSubmitting(true);
-    const { error: insertError } = await supabase.from("appointments").insert({
-      patient_name: formData.name,
-      phone: formData.phone,
-      department: formData.department,
-      doctor_name: formData.doctor,
-      preferred_date: formData.date,
-      source: "booking_section",
-    });
+    
+    // Simulate API call
+    await new Promise(resolve => setTimeout(resolve, 1500));
+    
     setIsSubmitting(false);
-    if (insertError) {
-      setError("Something went wrong. Please try again or call us directly.");
-    } else {
-      setIsSuccess(true);
-    }
+    setIsSuccess(true);
   };
 
   const handleReset = () => {

@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, Calendar, Phone, User, Stethoscope, Clock, CheckCircle, ChevronRight, ChevronLeft, ShieldCheck } from "lucide-react";
-import { supabase } from "@/lib/supabase";
 
 interface AppointmentModalProps {
   isOpen: boolean;
@@ -53,21 +52,12 @@ export default function AppointmentModal({ isOpen, onClose }: AppointmentModalPr
     e.preventDefault();
     setError("");
     setIsSubmitting(true);
-    const { error: insertError } = await supabase.from("appointments").insert({
-      patient_name: formData.name,
-      phone: formData.phone,
-      department: formData.specialty,
-      preferred_date: formData.date,
-      time_slot: formData.time,
-      symptoms: formData.message || null,
-      source: "appointment_modal",
-    });
+    
+    // Simulate API call
+    await new Promise(resolve => setTimeout(resolve, 1500));
+    
     setIsSubmitting(false);
-    if (insertError) {
-      setError("Something went wrong. Please try again or call us directly.");
-    } else {
-      setIsSuccess(true);
-    }
+    setIsSuccess(true);
   };
 
   const handleReset = () => {
