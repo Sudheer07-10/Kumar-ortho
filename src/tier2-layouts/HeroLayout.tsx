@@ -26,7 +26,7 @@ export default function Hero({ onOpenBooking, data }: HeroProps) {
       </div>
 
       {/* Main Center Content */}
-      <div className="relative z-10 flex flex-col items-center justify-start pt-24 sm:pt-28 lg:pt-36 px-4 w-full h-full text-center">
+      <div className="relative z-10 flex flex-col items-center justify-start pt-32 sm:pt-40 lg:pt-48 px-4 w-full h-full text-center">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

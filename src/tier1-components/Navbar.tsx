@@ -39,8 +39,8 @@ export default function Navbar({ onOpenBooking, data }: NavbarProps) {
   return (
     <header 
       className={cn(
-        "fixed top-0 left-0 right-0 z-[100] flex justify-between items-start px-4 sm:px-10 pt-0 transition-all duration-500 pointer-events-none",
-        isScrolled ? "glass-nav py-3" : "bg-transparent py-0"
+        "fixed top-0 left-0 right-0 z-[100] flex justify-between items-center px-4 sm:px-10 h-20 sm:h-24 transition-all duration-500 pointer-events-none",
+        isScrolled ? "glass-nav" : "bg-transparent"
       )}
     >
       
@@ -51,7 +51,7 @@ export default function Navbar({ onOpenBooking, data }: NavbarProps) {
       )}></div>
 
       {/* Left Navigation Items */}
-      <nav className="hidden lg:flex items-center gap-1.5 xl:gap-2 mt-6 relative z-10 pointer-events-auto max-w-[40vw] flex-wrap justify-start">
+      <nav className="hidden lg:flex items-center gap-1.5 xl:gap-2 relative z-10 pointer-events-auto max-w-[40vw] flex-wrap justify-start">
         {navLinks?.map((link: any) => (
           <a
             key={link.name}
@@ -82,7 +82,7 @@ export default function Navbar({ onOpenBooking, data }: NavbarProps) {
       </div>
 
       {/* Right Actions */}
-      <div className="flex items-center gap-2 sm:gap-3 mt-6 sm:mt-8 relative z-10 pointer-events-auto ml-auto">
+      <div className="flex items-center gap-2 sm:gap-3 relative z-10 pointer-events-auto ml-auto">
         
         {/* Search Placeholder */}
         <div className={cn(
@@ -105,7 +105,7 @@ export default function Navbar({ onOpenBooking, data }: NavbarProps) {
         <button
           onClick={onOpenBooking}
           className={cn(
-            "hidden sm:flex items-center gap-3 rounded-full px-6 py-2.5 text-sm font-bold shadow-xl hover:scale-105 active:scale-95 transition-all group",
+            "hidden lg:flex items-center gap-3 rounded-full px-6 py-2.5 text-sm font-bold shadow-xl hover:scale-105 active:scale-95 transition-all group",
             isScrolled ? "bg-black text-white hover:bg-black/80" : "bg-black text-white hover:bg-black/80"
           )}
         >
