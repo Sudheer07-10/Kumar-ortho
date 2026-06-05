@@ -2,43 +2,30 @@
 
 import { motion } from "framer-motion";
 
-export default function WhyChooseUs() {
-  const reasons = [
-    {
-      title: "Experienced Specialists",
-      desc: "Consultations and procedures directed by veteran practitioners holding national certifications and extensive clinical tenures.",
-    },
-    {
-      title: "Advanced Medical Technology",
-      desc: "Equipped with sterile laminar airflow operation theatres, C-arm imaging, and modern diagnostic systems.",
-    },
-    {
-      title: "24/7 Emergency Care",
-      desc: "Immediate admission, triaging, and critical care units active round-the-clock to manage critical accidents and trauma cases.",
-    },
-    {
-      title: "Patient-Centered Treatment",
-      desc: "Empathetic communication and clinical pathways structured dynamically around individual patient recovery and comfort.",
-    },
-  ];
+interface WhyChooseUsProps {
+  data: any;
+}
+
+export default function WhyChooseUs({ data }: WhyChooseUsProps) {
+  const reasons = data.reasons;
 
   return (
     <section
       id="why-choose-us"
-      className="bg-white text-black opacity-100 brightness-100 px-4 sm:px-6 lg:px-8 py-24 flex flex-col items-center overflow-hidden"
+      className="bg-transparent text-black px-4 sm:px-6 lg:px-8 py-24 flex flex-col items-center overflow-hidden"
     >
       <div className="w-full max-w-5xl mx-auto flex flex-col">
 
         {/* Section Header */}
         <div className="mb-12">
           <h2 className="text-4xl sm:text-5xl lg:text-[54px] font-serif text-[#111111] dark:text-white font-medium tracking-tight leading-[1.1]">
-            Why Kumar's Ortho Clinic
+            {data.headline}
           </h2>
         </div>
 
         {/* Vertical List */}
         <div className="w-full border-t border-gray-200 dark:border-zinc-800">
-          {reasons.map((reason, idx) => (
+          {reasons.map((reason: any, idx: number) => (
             <motion.div
               key={idx}
               initial={{ opacity: 0, y: 15 }}

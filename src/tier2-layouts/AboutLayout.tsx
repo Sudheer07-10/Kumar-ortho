@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { motion } from "framer-motion";
 import { Award, HeartHandshake, Layers, Clock, Activity } from "lucide-react";
@@ -28,7 +28,7 @@ export default function About() {
   ];
 
   return (
-    <section id="about" className="py-24 bg-white dark:bg-zinc-900 font-sans relative overflow-hidden">
+    <section id="about" className="py-24 bg-gradient-to-b from-white to-blue-50/50 dark:bg-zinc-900 font-sans relative overflow-hidden">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}

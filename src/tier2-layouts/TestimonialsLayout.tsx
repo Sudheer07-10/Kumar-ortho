@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -59,7 +59,7 @@ export default function Testimonials() {
   };
 
   return (
-    <section id="testimonials" className="py-24 bg-gray-50 dark:bg-zinc-950 font-sans relative overflow-hidden">
+    <section id="testimonials" className="py-24 bg-gradient-to-tr from-blue-50/50 to-teal-50/50 dark:bg-zinc-950 font-sans relative overflow-hidden">
       <div className="absolute top-0 right-10 w-72 h-72 rounded-full bg-blue-500/5 blur-3xl pointer-events-none" />
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -112,7 +112,7 @@ export default function Testimonials() {
                       {reviews[current].name}
                     </span>
                     <span className="block text-xs text-gray-400">
-                      {reviews[current].location} • Treated for <strong className="text-blue-600 dark:text-blue-400">{reviews[current].treatment}</strong>
+                      {reviews[current].location} â€¢ Treated for <strong className="text-blue-600 dark:text-blue-400">{reviews[current].treatment}</strong>
                     </span>
                   </div>
                 </div>

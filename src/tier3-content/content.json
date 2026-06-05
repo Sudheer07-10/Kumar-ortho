@@ -1,0 +1,272 @@
+{
+  "layout": {
+    "seo": {
+      "title": "Kumar's Ortho & Multi-Speciality Hospital",
+      "description": "Advanced orthopedic surgery, trauma care, and multi-speciality healthcare services in Anantapur."
+    },
+    "navbar": {
+      "logo": {
+        "title": "KUMAR'S ORTHO",
+        "subtitle": "& CLINIC"
+      },
+      "links": [
+        {
+          "name": "Specialties",
+          "href": "#services"
+        },
+        {
+          "name": "Specialists",
+          "href": "#doctor"
+        },
+        {
+          "name": "Why Us",
+          "href": "#why-choose-us"
+        },
+        {
+          "name": "Booking",
+          "href": "#booking-section"
+        },
+        {
+          "name": "FAQ",
+          "href": "#faq"
+        },
+        {
+          "name": "Contact",
+          "href": "#contact"
+        }
+      ],
+      "actions": {
+        "emergencyText": "EMERGENCY: 08554-245678",
+        "emergencyPhone": "+918554245678",
+        "bookAppointmentText": "BOOK APPOINTMENT"
+      },
+      "mobileActions": {
+        "emergencyText": "Emergency: 08554-245678",
+        "bookAppointmentText": "Book Appointment"
+      }
+    },
+    "hero": {
+      "headline": "Advanced care. Trusted Healing.",
+      "subtext": "Expert orthopedic and multispeciality care with advanced treatment and compassionate support.",
+      "cta": "Book Appointment",
+      "emergency": "Emergency: 08554-245678"
+    },
+    "services": {
+      "badge": "CENTERS OF EXCELLENCE.",
+      "headline": "We provide high-quality medical services across key healthcare disciplines with uncompromised therapeutic safety.",
+      "specialties": [
+        { "title": "Orthopedics & Spine", "image": "/specialties/orthopedics.png" },
+        { "title": "Cardiology", "image": "/specialties/cardiology.png" },
+        { "title": "Urology", "image": "/specialties/urology.png" },
+        { "title": "General Medicine", "image": "/specialties/medicine.png" },
+        { "title": "General Surgery", "image": "/specialties/surgery.png" },
+        { "title": "Pediatrics", "image": "/specialties/pediatrics.png" },
+        { "title": "Women's Health", "image": "/specialties/womens_health.png" },
+        { "title": "Diagnostics & Imaging", "image": "/specialties/diagnostics.png" }
+      ],
+      "itemBadge": "Specialty",
+      "ctaHeadline": "Trusted healthcare services focused on patient safety and quality care.",
+      "ctaButton": "Book an Appointment"
+    },
+    "doctor": {
+      "badge": "TEAM",
+      "headline": "Our medical leadership",
+      "subtext": "Meet our team of senior doctors shaping the future of healthcare.",
+      "doctors": [
+        { "name": "Dr. Y. M. V. Kumar", "designation": "Orthopedic & Spine Surgeon", "qualifications": "MBBS, MS (Ortho) | Fellow in Spine Surgery" },
+        { "name": "Dr. V. Karthik Reddy", "designation": "Consultant Physician", "qualifications": "MBBS, DNB General Medicine" },
+        { "name": "Dr. A. Mithun Rakesh", "designation": "Consultant Physician", "qualifications": "MBBS, DNB General Medicine" },
+        { "name": "Dr. K. Karun Kumar Reddy", "designation": "General Surgeon", "qualifications": "MS General Surgery, FIAGES" },
+        { "name": "Dr. Rajashekar Battula", "designation": "Consultant Urologist", "qualifications": "MS, MCh (Urology), FMAS" },
+        { "name": "Dr. C. Aruna Jyothi", "designation": "Obstetrics & Gynecology Specialist", "qualifications": "MBBS, MS (OBG)" }
+      ],
+      "ctaButton": "Book Consult"
+    },
+    "whyChooseUs": {
+      "headline": "Why Kumar's Ortho Clinic",
+      "reasons": [
+        { "title": "Experienced Specialists", "desc": "Consultations and procedures directed by veteran practitioners holding national certifications and extensive clinical tenures." },
+        { "title": "Advanced Medical Technology", "desc": "Equipped with sterile laminar airflow operation theatres, C-arm imaging, and modern diagnostic systems." },
+        { "title": "24/7 Emergency Care", "desc": "Immediate admission, triaging, and critical care units active round-the-clock to manage critical accidents and trauma cases." },
+        { "title": "Patient-Centered Treatment", "desc": "Empathetic communication and clinical pathways structured dynamically around individual patient recovery and comfort." }
+      ]
+    },
+    "facilities": {
+      "badge": "INFRASTRUCTURE",
+      "headline": "Advanced facilities designed around patient care",
+      "subtext": "Review the clinical setups engineered to ensure sterile compliance, diagnostics speed, and complete patient comfort.",
+      "items": [
+        { "title": "Orthopedic Excellence", "desc": "Advanced care for fractures, joint disorders, trauma, and spine-related conditions." },
+        { "title": "Experienced Specialists", "desc": "Dedicated consultants across orthopedics, medicine, surgery, urology, and women's health." },
+        { "title": "Accurate Diagnostics", "desc": "Laboratory and imaging services supporting timely diagnosis and treatment." },
+        { "title": "Modern Medical Infrastructure", "desc": "Well-equipped facilities designed to support safe and efficient patient care." },
+        { "title": "Emergency Support", "desc": "Prompt medical attention and stabilization for urgent healthcare needs." },
+        { "title": "Compassionate Patient Care", "desc": "Personalized treatment plans focused on comfort, recovery, and long-term wellness." }
+      ]
+    },
+    "booking": {
+      "badge": "Direct Care Access",
+      "headline": "Book Your Appointment",
+      "subtext": "Select your preferred medical department, pick a specialist, and secure your schedule in minutes.",
+      "form": {
+        "nameLabel": "Patient Name",
+        "namePlaceholder": "Enter patient full name",
+        "phoneLabel": "Phone Number",
+        "phonePlaceholder": "10-digit mobile number",
+        "deptLabel": "Specialty Department",
+        "doctorLabel": "Select Specialist",
+        "dateLabel": "Preferred Date",
+        "submitText": "Confirm Booking Request",
+        "submittingText": "Saving your slot...",
+        "successTitle": "Consultation Booked!",
+        "successSubtext": "Thank you, {name}. We have registered your slot for {doctor} ({department}) on {date}. Our front desk will call you to stabilize your timing block.",
+        "successButton": "Back to Form"
+      },
+      "whatsapp": {
+        "badge": "WhatsApp Consultation",
+        "headline": "Book Instantly via WhatsApp",
+        "subtext": "Skip the form entirely! Start an active chat with our scheduling assistant on WhatsApp to book and verify slots instantly.",
+        "button": "Chat & Book Instantly",
+        "link": "https://wa.me/919440275556?text=I%20want%20to%20book%20an%20OPD%20appointment%20with%20Kumar%20Hospital"
+      },
+      "assurances": {
+        "title": "Clinical Assurances",
+        "items": [
+          "100% HIPAA-compliant record management.",
+          "Pre-authorization cashless support for listing panels.",
+          "Emergency admissions triaged immediately."
+        ],
+        "footer": "Apollo Standard Hospital Infrastructure"
+      }
+    },
+    "faq": {
+      "headline": "Frequently Asked Questions",
+      "subtext": "Common questions about how Kumar's Ortho Clinic works, what's included, and how to get started. If you don't find your answer here, reach out at <a href=\"mailto:contact@kumarhospital.com\" class=\"underline hover:text-gray-900 dark:hover:text-gray-300 transition-colors\">contact@kumarhospital.com</a> and we'll get back to you quickly.",
+      "items": [
+        { "q": "How do I book an appointment with Dr. Kumar?", "a": "You can request an appointment by clicking any 'Book Appointment' button on this website and filling out the short form, or by calling our desk directly at 08554-245678 or +91 94402 75556. Once submitted, our coordinator will call you to confirm your exact time slot." },
+        { "q": "What are the hospital consulting hours?", "a": "Our Outpatient Department (OPD) is open Monday through Saturday from 9:00 AM to 8:00 PM. Emergency, trauma triaging, and inpatient critical care operations are fully active 24 hours a day, 7 days a week, including Sundays and public holidays." },
+        { "q": "Does the hospital handle emergency accident cases and fracture surgeries?", "a": "Yes, we are a specialized trauma care center. We have an active trauma surgical team led by Dr. Kumar. Our operating theaters, in-house X-ray facility, diagnostics, and sterile wards are equipped for immediate admission and fracture fixing operations 24/7." },
+        { "q": "Do you offer cashless treatments or accept health insurance?", "a": "Yes. We partner with major health insurance companies and Third-Party Administrators (TPAs) to provide cashless treatment for qualifying surgical procedures. Please visit our front office with your health card and ID for pre-authorization details." },
+        { "q": "Is there in-house physical therapy available for post-surgical recovery?", "a": "Absolutely. We have a dedicated Physiotherapy and Rehabilitation department inside the hospital. Our physical therapists design customized mobility recovery and pain-management programs specifically for patients recovering from joint replacements, fracture repairs, and ligament reconstructions." }
+      ]
+    },
+    "contact": {
+      "badge": "Locate & Visit Us",
+      "headline": "Hospital Location & Directions",
+      "subtext": "Easily navigate to Kumar's Ortho Clinic in Anantapur. Find precise driving directions, parking layout, and quick contact details.",
+      "map": {
+        "embedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.4287895315806!2d77.58552147573031!3d14.660600175628588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb14ab59e219491%3A0x6b19a16f2c79f3cf!2sVidyut%20Nagar%2080%20Feet%20Rd%2C%20Vidyut%20Nagar%2C%20Anantapur%2C%20Andhra%20Pradesh%20515001!5e0!3m2!1sen!2sin!4v1716658000000!5m2!1sen!2sin",
+        "linkUrl": "https://maps.google.com/?q=Vidyut+Nagar+80+Feet+Rd,+Vidyut+Nagar,+Anantapur,+Andhra+Pradesh+515001",
+        "btnText": "Open in Google Maps"
+      },
+      "addressCard": {
+        "title": "Hospital Campus",
+        "desc": "Kumar's Ortho Clinic is easily accessible for patients coming from all corners of Anantapur District.",
+        "addressLines": [
+          "12-4, 80 Feet Road,",
+          "Vidyuth Nagar, Housing Board Colony,",
+          "Anantapur, Andhra Pradesh - 515001, India"
+        ],
+        "btnText": "Get Driving Directions"
+      },
+      "infoCard": {
+        "hoursTitle": "Consulting Hours",
+        "hoursDesc": "Mon - Sat: 9:00 AM - 8:00 PM",
+        "hoursEmergency": "Emergency Admissions & Trauma Care: 24/7 Live",
+        "phoneTitle": "Direct Helpline Contacts",
+        "phone1Text": "OPD Desk: 08554-245678",
+        "phone1Link": "tel:08554245678",
+        "phone2Text": "Hotline: +91 94402 75556",
+        "phone2Link": "tel:+919440275556",
+        "whatsappBtn": "Chat Instantly on WhatsApp",
+        "whatsappLink": "https://wa.me/919440275556?text=Hi%20Kumar%20Hospital,%20I%27d%20like%20to%20inquire%20about%20your%20services."
+      }
+    },
+    "footer": {
+      "brand": {
+        "title": "KUMAR'S ORTHO & Multi-Specality Hospital",
+        "description": "Established in 2021, Kumar's Ortho Clinic is dedicated to delivering state-of-the-art orthopedic surgery, trauma care, and multi-speciality healthcare services to the community of Anantapur.",
+        "badge": "Certified Orthopedic Excellence"
+      },
+      "quickLinks": {
+        "title": "Quick Links",
+        "links": [
+          {
+            "name": "Home",
+            "href": "#home"
+          },
+          {
+            "name": "Our Specialist",
+            "href": "#doctor"
+          },
+          {
+            "name": "Clinical Services",
+            "href": "#services"
+          },
+          {
+            "name": "Why Choose Us",
+            "href": "#why-choose-us"
+          },
+          {
+            "name": "Facilities Overview",
+            "href": "#facilities"
+          },
+          {
+            "name": "Contact & Location",
+            "href": "#contact"
+          }
+        ]
+      },
+      "specialties": {
+        "title": "Our Specialties",
+        "items": [
+          "Orthopedic & Spine Surgery",
+          "Complex Fracture & Trauma Care",
+          "General & Preventive Medicine",
+          "Physiotherapy & Rehabilitation",
+          "24/7 Emergency & ICU Care"
+        ]
+      },
+      "reachOut": {
+        "title": "Reach Out",
+        "address": "12-4, 80 Feet Road, Vidyuth Nagar,\nHousing Board Colony, Anantapur,\nAndhra Pradesh 515001",
+        "phone1": {
+          "display": "08554-245678",
+          "href": "tel:+918554245678"
+        },
+        "phone2": {
+          "display": "+91 94402 75556",
+          "href": "tel:+919440275556"
+        },
+        "email": {
+          "display": "info@kumarorthohospital.com",
+          "href": "mailto:info@kumarorthohospital.com"
+        }
+      },
+      "opdTimings": {
+        "title": "OPD CONSULTATION TIMES",
+        "regular": "Mon - Sat: 9:00 AM - 8:00 PM",
+        "sunday": "Sunday: Emergency Trauma Only"
+      },
+      "legal": {
+        "copyright": "Kumar's Ortho Clinic. All rights reserved.",
+        "links": [
+          {
+            "name": "Terms of Use",
+            "href": "#services"
+          },
+          {
+            "name": "Privacy Policy",
+            "href": "#contact"
+          },
+          {
+            "name": "Sitemap",
+            "href": "#faq"
+          }
+        ],
+        "madeWith": "Made with",
+        "madeIn": "in India."
+      }
+    }
+  }
+}

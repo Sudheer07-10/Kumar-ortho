@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -125,9 +125,9 @@ export default function AppointmentModal({ isOpen, onClose }: AppointmentModalPr
               <div className="bg-gray-50 dark:bg-zinc-850 px-6 py-4 border-b border-gray-100 dark:border-zinc-800">
                 <div className="flex items-center justify-between max-w-md mx-auto relative">
                   {/* Progress Line */}
-                  <div className="absolute top-1/2 left-0 w-full h-0.5 bg-gray-200 dark:bg-zinc-700 -translate-y-1/2 z-0" />
+                  <div className="absolute top-4 left-0 w-full h-0.5 bg-gray-200 dark:bg-zinc-700 z-0" />
                   <div 
-                    className="absolute top-1/2 left-0 h-0.5 bg-teal-600 dark:bg-teal-500 -translate-y-1/2 z-0 transition-all duration-300"
+                    className="absolute top-4 left-0 h-0.5 bg-teal-600 dark:bg-teal-500 z-0 transition-all duration-300"
                     style={{ width: `${((step - 1) / (stepsInfo.length - 1)) * 100}%` }}
                   />
 

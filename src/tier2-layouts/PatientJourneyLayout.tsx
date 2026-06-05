@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { motion } from "framer-motion";
 import { Calendar, Stethoscope, FileText, CheckSquare, HeartPulse, ChevronRight } from "lucide-react";
@@ -38,7 +38,7 @@ export default function PatientJourney() {
   ];
 
   return (
-    <section className="py-24 bg-[#EAF3FF]/40 dark:bg-zinc-950/20 font-sans overflow-hidden border-y border-gray-100 dark:border-zinc-800">
+    <section className="py-24 bg-gradient-to-r from-blue-50/50 via-white to-indigo-50/50 dark:bg-zinc-950/20 font-sans overflow-hidden border-y border-gray-100 dark:border-zinc-800">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}

@@ -4,7 +4,11 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Calendar, Phone, User, Stethoscope, Clock, CheckCircle, MessageSquare, ShieldCheck } from "lucide-react";
 
-export default function AppointmentBooking() {
+interface BookingProps {
+  data: any;
+}
+
+export default function AppointmentBooking({ data }: BookingProps) {
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -44,21 +48,21 @@ export default function AppointmentBooking() {
   };
 
   return (
-    <section id="booking-section" className="bg-white dark:bg-zinc-950 font-sans px-0 sm:px-4 pb-16 flex flex-col items-center overflow-hidden">
-      <div className="relative w-full max-w-[1440px] rounded-[0px] sm:rounded-[40px] overflow-hidden bg-gradient-to-br from-blue-50/40 via-teal-50/20 to-indigo-50/40 dark:from-zinc-900 dark:via-zinc-850 dark:to-zinc-900 pt-16 pb-16">
+    <section id="booking-section" className="bg-transparent font-sans px-0 sm:px-4 pb-16 flex flex-col items-center overflow-hidden">
+      <div className="relative w-full max-w-[1440px] rounded-[0px] sm:rounded-[40px] overflow-hidden bg-transparent pt-16 pb-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-xs font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20 px-3 py-1.5 rounded-md">
-            Direct Care Access
+            {data.badge}
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0B1F3A] dark:text-white mt-4 tracking-tight">
-            Book Your Appointment
+            {data.headline}
           </h2>
           <div className="h-1 w-20 bg-blue-500 mx-auto mt-4 rounded-full" />
           <p className="text-gray-500 dark:text-zinc-400 mt-4 text-sm sm:text-base">
-            Select your preferred medical department, pick a specialist, and secure your schedule in minutes.
+            {data.subtext}
           </p>
         </div>
 
@@ -71,14 +75,14 @@ export default function AppointmentBooking() {
                 {/* Name */}
                 <div>
                   <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-1.5">
-                    Patient Name <span className="text-red-500">*</span>
+                    {data.form.nameLabel} <span className="text-red-500">*</span>
                   </label>
                   <div className="relative">
                     <User className="absolute top-1/2 left-3.5 h-4 w-4 -translate-y-1/2 text-blue-600" />
                     <input
                       type="text"
                       required
-                      placeholder="Enter patient full name"
+                      placeholder={data.form.namePlaceholder}
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                       className="w-full rounded-xl border border-gray-200 bg-white text-gray-900 dark:bg-zinc-800 dark:text-white dark:border-zinc-700 py-3 pl-10 pr-4 text-sm outline-none transition-all focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
@@ -89,7 +93,7 @@ export default function AppointmentBooking() {
                 {/* Phone */}
                 <div>
                   <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-1.5">
-                    Phone Number <span className="text-red-500">*</span>
+                    {data.form.phoneLabel} <span className="text-red-500">*</span>
                   </label>
                   <div className="relative">
                     <Phone className="absolute top-1/2 left-3.5 h-4 w-4 -translate-y-1/2 text-blue-600" />
@@ -97,7 +101,7 @@ export default function AppointmentBooking() {
                       type="tel"
                       required
                       pattern="[0-9]{10}"
-                      placeholder="10-digit mobile number"
+                      placeholder={data.form.phonePlaceholder}
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                       className="w-full rounded-xl border border-gray-200 bg-white text-gray-900 dark:bg-zinc-800 dark:text-white dark:border-zinc-700 py-3 pl-10 pr-4 text-sm outline-none transition-all focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
@@ -110,7 +114,7 @@ export default function AppointmentBooking() {
                   {/* Department */}
                   <div>
                     <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-1.5">
-                      Specialty Department
+                      {data.form.deptLabel}
                     </label>
                     <div className="relative">
                       <Stethoscope className="absolute top-1/2 left-3.5 h-4 w-4 -translate-y-1/2 text-blue-600" />
@@ -134,7 +138,7 @@ export default function AppointmentBooking() {
                   {/* Doctor */}
                   <div>
                     <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-1.5">
-                      Select Specialist
+                      {data.form.doctorLabel}
                     </label>
                     <div className="relative">
                       <User className="absolute top-1/2 left-3.5 h-4 w-4 -translate-y-1/2 text-blue-600" />
@@ -157,7 +161,7 @@ export default function AppointmentBooking() {
                 {/* Preferred Date */}
                 <div>
                   <label className="block text-xs font-bold uppercase tracking-wider text-gray-500 mb-1.5">
-                    Preferred Date <span className="text-red-500">*</span>
+                    {data.form.dateLabel} <span className="text-red-500">*</span>
                   </label>
                   <input
                     type="date"
@@ -180,7 +184,7 @@ export default function AppointmentBooking() {
                   disabled={isSubmitting}
                   className="w-full rounded-xl bg-blue-600 py-3.5 text-sm font-bold text-white shadow-lg shadow-blue-600/20 transition-all hover:bg-blue-700 active:scale-98 disabled:opacity-50 mt-2"
                 >
-                  {isSubmitting ? "Saving your slot..." : "Confirm Booking Request"}
+                  {isSubmitting ? data.form.submittingText : data.form.submitText}
                 </button>
               </form>
             ) : (
@@ -193,15 +197,15 @@ export default function AppointmentBooking() {
                 <div className="mb-4 rounded-full bg-emerald-50 p-4 dark:bg-emerald-950/20 text-emerald-600">
                   <CheckCircle className="h-12 w-12 text-emerald-600" />
                 </div>
-                <h4 className="text-xl font-extrabold text-[#0B1F3A] mb-2">Consultation Booked!</h4>
+                <h4 className="text-xl font-extrabold text-[#0B1F3A] mb-2">{data.form.successTitle}</h4>
                 <p className="text-xs text-gray-500 leading-relaxed max-w-xs mb-6">
-                  Thank you, <strong className="text-[#0B1F3A]">{formData.name}</strong>. We have registered your slot for <strong className="text-[#0B1F3A]">{formData.doctor}</strong> ({formData.department}) on <strong className="text-[#0B1F3A]">{formData.date}</strong>. Our front desk will call you to stabilize your timing block.
+                  {data.form.successSubtext.replace('{name}', formData.name).replace('{doctor}', formData.doctor).replace('{department}', formData.department).replace('{date}', formData.date)}
                 </p>
                 <button
                   onClick={handleReset}
                   className="w-full max-w-[200px] rounded-xl bg-[#0B1F3A] py-3 text-sm font-bold text-white transition-all hover:bg-navy-900 active:scale-98"
                 >
-                  Back to Form
+                  {data.form.successButton}
                 </button>
               </motion.div>
             )}
@@ -211,10 +215,10 @@ export default function AppointmentBooking() {
           <div className="lg:col-span-5 flex flex-col gap-6 justify-between">
             <div className="rounded-[32px] bg-gradient-to-br from-[#EAF3FF] to-white p-6 border border-blue-100 shadow-md flex flex-col justify-between flex-1 min-h-[220px]">
               <div>
-                <span className="text-[10px] font-extrabold text-blue-600 uppercase tracking-widest block mb-2">WhatsApp Consultation</span>
-                <h3 className="text-xl font-bold text-[#0B1F3A] mb-3">Book Instantly via WhatsApp</h3>
+                <span className="text-[10px] font-extrabold text-blue-600 uppercase tracking-widest block mb-2">{data.whatsapp.badge}</span>
+                <h3 className="text-xl font-bold text-[#0B1F3A] mb-3">{data.whatsapp.headline}</h3>
                 <p className="text-xs text-gray-500 leading-relaxed">
-                  Skip the form entirely! Start an active chat with our scheduling assistant on WhatsApp to book and verify slots instantly.
+                  {data.whatsapp.subtext}
                 </p>
               </div>
 
@@ -229,7 +233,7 @@ export default function AppointmentBooking() {
                 <svg viewBox="0 0 24 24" className="h-4.5 w-4.5 fill-white stroke-none">
                   <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.713-1.458L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.413 9.863-9.847.001-2.63-1.023-5.101-2.885-6.963C16.531 1.932 14.06 .907 11.433.907c-5.434 0-9.858 4.414-9.861 9.848-.001 1.942.507 3.834 1.47 5.514L2.017 21.6l5.522-1.446zM17.472 14.382c-.301-.15-1.78-.879-2.057-.98-.277-.101-.478-.15-.678.15-.199.299-.773.979-.949 1.179-.176.2-.351.224-.652.074-1.022-.512-1.795-.877-2.507-1.492-.562-.487-.887-1.077-.997-1.272-.11-.2-.012-.307.088-.407.089-.09.199-.232.299-.348.101-.115.134-.199.199-.332.066-.133.033-.25-.016-.35-.05-.1-.478-1.15-.655-1.579-.173-.414-.347-.358-.478-.365-.123-.006-.264-.007-.406-.007-.142 0-.374.053-.57.266-.197.213-.753.737-.753 1.798 0 1.06.773 2.083.88 2.233.107.15 1.52 2.32 3.682 3.253.514.223.916.356 1.229.456.518.165.989.141 1.361.086.415-.062 1.78-.727 2.031-1.43.252-.703.252-1.306.176-1.43-.076-.124-.277-.199-.578-.35" />
                 </svg>
-                <span>Chat &amp; Book Instantly</span>
+                <span>{data.whatsapp.button}</span>
               </motion.a>
             </div>
 
@@ -242,22 +246,22 @@ export default function AppointmentBooking() {
                 </h4>
                 <ul className="space-y-2.5 text-xs text-gray-500 leading-normal">
                   <li className="flex items-start gap-2">
-                    <span className="text-blue-500">●</span>
+                    <span className="text-blue-500">â—</span>
                     <span>100% HIPAA-compliant record management.</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-blue-500">●</span>
+                    <span className="text-blue-500">â—</span>
                     <span>Pre-authorization cashless support for listing panels.</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-blue-500">●</span>
+                    <span className="text-blue-500">â—</span>
                     <span>Emergency admissions triaged immediately.</span>
                   </li>
                 </ul>
               </div>
               
               <div className="mt-4 pt-4 border-t border-gray-200/60 text-[10px] text-gray-400 font-semibold tracking-wider text-center uppercase">
-                Apollo Standard Hospital Infrastructure
+                {data.assurances.footer}
               </div>
             </div>
           </div>

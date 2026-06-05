@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import content from "@/tier3-content/content.json";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Kumars Ortho",
-  description: "Advanced orthopedic surgery, trauma care, and multi-speciality healthcare services.",
+  title: content.layout.seo.title,
+  description: content.layout.seo.description,
 };
 
 export default function RootLayout({

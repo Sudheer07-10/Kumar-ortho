@@ -3,48 +3,52 @@
 import { motion } from "framer-motion";
 import { MessageSquare, Phone } from "lucide-react";
 
-export default function Footer() {
+interface FooterProps {
+  data: any;
+}
+
+export default function Footer({ data }: FooterProps) {
   const currentYear = new Date().getFullYear();
 
   return (
     <footer className="bg-[#0b1626] text-slate-300 font-sans border-t border-slate-800/80 relative overflow-hidden py-3 sm:py-4">
       {/* Subtle background glow effect */}
       <div className="absolute top-0 left-1/4 w-[250px] h-[250px] bg-blue-500/5 rounded-full blur-3xl pointer-events-none" />
-      
+
       <div className="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col gap-3">
-        
+
         {/* Main Content Row */}
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-3 lg:gap-4">
-          
+
           {/* Hospital Logo & Title */}
           <div className="flex items-center gap-3">
             <img
               src="/kumar-hospitals.svg"
-              alt="Kumar's Ortho Clinic Logo"
+              alt={`${data.brand.title} Logo`}
               className="h-12 w-auto object-contain"
             />
             <div className="h-5 w-[1px] bg-slate-700/50 hidden sm:block" />
             <span className="text-xs sm:text-sm font-bold text-white tracking-wide whitespace-nowrap">
-              Kumar's Ortho Clinic
+              {data.brand.title}
             </span>
           </div>
 
           {/* Contact & Location Details */}
           <div className="flex flex-wrap items-center gap-x-3 gap-y-1.5 text-xs text-slate-400 font-medium">
             <span className="flex items-center gap-1">
-              <span>📍</span> Vidyuth Nagar, Anantapur
+              <span>📍</span> {data.reachOut.address.replace(/\n.*/g, '')}
             </span>
-            
+
             <span className="text-slate-700 hidden md:inline">|</span>
-            
-            <a href="tel:08554245678" className="flex items-center gap-1 hover:text-white transition-colors">
-              <span>📞</span> 08554-245678
+
+            <a href={data.reachOut.phone1.href} className="flex items-center gap-1 hover:text-white transition-colors">
+              <span>☎️</span> {data.reachOut.phone1.display}
             </a>
-            
+
             <span className="text-slate-700 hidden md:inline">|</span>
-            
-            <a href="tel:+919440275556" className="flex items-center gap-1 hover:text-white transition-colors">
-              <span>📱</span> +91 94402 75556
+
+            <a href={data.reachOut.phone2.href} className="flex items-center gap-1 hover:text-white transition-colors">
+              <span>📱</span> {data.reachOut.phone2.display}
             </a>
           </div>
 
@@ -79,7 +83,7 @@ export default function Footer() {
 
         {/* Minimal Bottom Bar */}
         <div className="border-t border-slate-800/40 pt-2 flex items-center justify-between text-[10px] text-slate-500 font-medium">
-          <p>© Kumar's Ortho Clinic, Anantapur. All Rights Reserved.</p>
+          <p>Â© Kumar's Ortho Clinic, Anantapur. All Rights Reserved.</p>
         </div>
 
       </div>

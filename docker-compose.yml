@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  kumar-landing-page:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: kumar-landing-page
+    restart: unless-stopped
+    ports:
+      # Mapping external port 3002 to internal port 3000
+      # (Checked your screenshot to ensure 3002 is not in the 'already in use' list)
+      - "3002:3000"
+    environment:
+      - NODE_ENV=production
