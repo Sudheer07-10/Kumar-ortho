@@ -82,7 +82,7 @@ export default function Navbar({ onOpenBooking, data }: NavbarProps) {
       </div>
 
       {/* Right Actions */}
-      <div className="flex items-center gap-3 mt-8 relative z-10 pointer-events-auto">
+      <div className="flex items-center gap-2 sm:gap-3 mt-6 sm:mt-8 relative z-10 pointer-events-auto ml-auto">
         
         {/* Search Placeholder */}
         <div className={cn(
@@ -105,7 +105,7 @@ export default function Navbar({ onOpenBooking, data }: NavbarProps) {
         <button
           onClick={onOpenBooking}
           className={cn(
-            "flex items-center gap-3 rounded-full px-6 py-2.5 text-sm font-bold shadow-xl hover:scale-105 active:scale-95 transition-all group",
+            "hidden sm:flex items-center gap-3 rounded-full px-6 py-2.5 text-sm font-bold shadow-xl hover:scale-105 active:scale-95 transition-all group",
             isScrolled ? "bg-black text-white hover:bg-black/80" : "bg-black text-white hover:bg-black/80"
           )}
         >
