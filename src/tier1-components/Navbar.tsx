@@ -73,7 +73,7 @@ export default function Navbar({ onOpenBooking, data }: NavbarProps) {
         <div className="navbar-cutout px-6 sm:px-10 pt-2 pb-4 pointer-events-auto flex justify-center items-center shadow-sm">
           <a href="#home" className="flex items-center group">
             <img
-              src="/kumar-hospitals.svg"
+              src="/logo.png"
               alt="Kumar's Ortho Clinic"
               className="h-10 sm:h-12 w-auto object-contain hover:scale-[1.03] transition-transform duration-300"
             />

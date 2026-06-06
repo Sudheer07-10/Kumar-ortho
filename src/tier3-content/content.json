@@ -55,14 +55,38 @@
       "badge": "CENTERS OF EXCELLENCE.",
       "headline": "We provide high-quality medical services across key healthcare disciplines with uncompromised therapeutic safety.",
       "specialties": [
-        { "title": "Orthopedics & Spine", "image": "/specialties/orthopedics.png" },
-        { "title": "Cardiology", "image": "/specialties/cardiology.png" },
-        { "title": "Urology", "image": "/specialties/urology.png" },
-        { "title": "General Medicine", "image": "/specialties/medicine.png" },
-        { "title": "General Surgery", "image": "/specialties/surgery.png" },
-        { "title": "Pediatrics", "image": "/specialties/pediatrics.png" },
-        { "title": "Women's Health", "image": "/specialties/womens_health.png" },
-        { "title": "Diagnostics & Imaging", "image": "/specialties/diagnostics.png" }
+        {
+          "title": "Orthopedics & Spine",
+          "image": "/specialties/orthopedics.png"
+        },
+        {
+          "title": "Cardiology",
+          "image": "/specialties/cardiology.png"
+        },
+        {
+          "title": "Urology",
+          "image": "/specialties/urology.png"
+        },
+        {
+          "title": "General Medicine",
+          "image": "/specialties/medicine.png"
+        },
+        {
+          "title": "General Surgery",
+          "image": "/specialties/surgery.png"
+        },
+        {
+          "title": "Pediatrics",
+          "image": "/specialties/pediatrics.png"
+        },
+        {
+          "title": "Women's Health",
+          "image": "/specialties/womens_health.png"
+        },
+        {
+          "title": "Diagnostics & Imaging",
+          "image": "/specialties/diagnostics.png"
+        }
       ],
       "itemBadge": "Specialty",
       "ctaHeadline": "Trusted healthcare services focused on patient safety and quality care.",
@@ -73,22 +97,58 @@
       "headline": "Our medical leadership",
       "subtext": "Meet our team of senior doctors shaping the future of healthcare.",
       "doctors": [
-        { "name": "Dr. Y. M. V. Kumar", "designation": "Orthopedic & Spine Surgeon", "qualifications": "MBBS, MS (Ortho) | Fellow in Spine Surgery" },
-        { "name": "Dr. V. Karthik Reddy", "designation": "Consultant Physician", "qualifications": "MBBS, DNB General Medicine" },
-        { "name": "Dr. A. Mithun Rakesh", "designation": "Consultant Physician", "qualifications": "MBBS, DNB General Medicine" },
-        { "name": "Dr. K. Karun Kumar Reddy", "designation": "General Surgeon", "qualifications": "MS General Surgery, FIAGES" },
-        { "name": "Dr. Rajashekar Battula", "designation": "Consultant Urologist", "qualifications": "MS, MCh (Urology), FMAS" },
-        { "name": "Dr. C. Aruna Jyothi", "designation": "Obstetrics & Gynecology Specialist", "qualifications": "MBBS, MS (OBG)" }
+        {
+          "name": "Dr. Y. M. V. Kumar",
+          "designation": "Orthopedic & Spine Surgeon",
+          "qualifications": "MBBS, MS (Ortho) | Fellow in Spine Surgery"
+        },
+        {
+          "name": "Dr. V. Karthik Reddy",
+          "designation": "Consultant Physician",
+          "qualifications": "MBBS, DNB General Medicine"
+        },
+        {
+          "name": "Dr. A. Mithun Rakesh",
+          "designation": "Consultant Physician",
+          "qualifications": "MBBS, DNB General Medicine"
+        },
+        {
+          "name": "Dr. K. Karun Kumar Reddy",
+          "designation": "General Surgeon",
+          "qualifications": "MS General Surgery, FIAGES"
+        },
+        {
+          "name": "Dr. Rajashekar Battula",
+          "designation": "Consultant Urologist",
+          "qualifications": "MS, MCh (Urology), FMAS"
+        },
+        {
+          "name": "Dr. C. Aruna Jyothi",
+          "designation": "Obstetrics & Gynecology Specialist",
+          "qualifications": "MBBS, MS (OBG)"
+        }
       ],
       "ctaButton": "Book Consult"
     },
     "whyChooseUs": {
       "headline": "Why Kumar's Ortho Clinic",
       "reasons": [
-        { "title": "Experienced Specialists", "desc": "Consultations and procedures directed by veteran practitioners holding national certifications and extensive clinical tenures." },
-        { "title": "Advanced Medical Technology", "desc": "Equipped with sterile laminar airflow operation theatres, C-arm imaging, and modern diagnostic systems." },
-        { "title": "24/7 Emergency Care", "desc": "Immediate admission, triaging, and critical care units active round-the-clock to manage critical accidents and trauma cases." },
-        { "title": "Patient-Centered Treatment", "desc": "Empathetic communication and clinical pathways structured dynamically around individual patient recovery and comfort." }
+        {
+          "title": "Experienced Specialists",
+          "desc": "Consultations and procedures directed by veteran practitioners holding national certifications and extensive clinical tenures."
+        },
+        {
+          "title": "Advanced Medical Technology",
+          "desc": "Equipped with sterile laminar airflow operation theatres, C-arm imaging, and modern diagnostic systems."
+        },
+        {
+          "title": "24/7 Emergency Care",
+          "desc": "Immediate admission, triaging, and critical care units active round-the-clock to manage critical accidents and trauma cases."
+        },
+        {
+          "title": "Patient-Centered Treatment",
+          "desc": "Empathetic communication and clinical pathways structured dynamically around individual patient recovery and comfort."
+        }
       ]
     },
     "facilities": {
@@ -96,12 +156,30 @@
       "headline": "Advanced facilities designed around patient care",
       "subtext": "Review the clinical setups engineered to ensure sterile compliance, diagnostics speed, and complete patient comfort.",
       "items": [
-        { "title": "Orthopedic Excellence", "desc": "Advanced care for fractures, joint disorders, trauma, and spine-related conditions." },
-        { "title": "Experienced Specialists", "desc": "Dedicated consultants across orthopedics, medicine, surgery, urology, and women's health." },
-        { "title": "Accurate Diagnostics", "desc": "Laboratory and imaging services supporting timely diagnosis and treatment." },
-        { "title": "Modern Medical Infrastructure", "desc": "Well-equipped facilities designed to support safe and efficient patient care." },
-        { "title": "Emergency Support", "desc": "Prompt medical attention and stabilization for urgent healthcare needs." },
-        { "title": "Compassionate Patient Care", "desc": "Personalized treatment plans focused on comfort, recovery, and long-term wellness." }
+        {
+          "title": "Orthopedic Excellence",
+          "desc": "Advanced care for fractures, joint disorders, trauma, and spine-related conditions."
+        },
+        {
+          "title": "Experienced Specialists",
+          "desc": "Dedicated consultants across orthopedics, medicine, surgery, urology, and women's health."
+        },
+        {
+          "title": "Accurate Diagnostics",
+          "desc": "Laboratory and imaging services supporting timely diagnosis and treatment."
+        },
+        {
+          "title": "Modern Medical Infrastructure",
+          "desc": "Well-equipped facilities designed to support safe and efficient patient care."
+        },
+        {
+          "title": "Emergency Support",
+          "desc": "Prompt medical attention and stabilization for urgent healthcare needs."
+        },
+        {
+          "title": "Compassionate Patient Care",
+          "desc": "Personalized treatment plans focused on comfort, recovery, and long-term wellness."
+        }
       ]
     },
     "booking": {
@@ -143,11 +221,26 @@
       "headline": "Frequently Asked Questions",
       "subtext": "Common questions about how Kumar's Ortho Clinic works, what's included, and how to get started. If you don't find your answer here, reach out at <a href=\"mailto:contact@kumarhospital.com\" class=\"underline hover:text-gray-900 dark:hover:text-gray-300 transition-colors\">contact@kumarhospital.com</a> and we'll get back to you quickly.",
       "items": [
-        { "q": "How do I book an appointment with Dr. Kumar?", "a": "You can request an appointment by clicking any 'Book Appointment' button on this website and filling out the short form, or by calling our desk directly at 08554-245678 or +91 94402 75556. Once submitted, our coordinator will call you to confirm your exact time slot." },
-        { "q": "What are the hospital consulting hours?", "a": "Our Outpatient Department (OPD) is open Monday through Saturday from 9:00 AM to 8:00 PM. Emergency, trauma triaging, and inpatient critical care operations are fully active 24 hours a day, 7 days a week, including Sundays and public holidays." },
-        { "q": "Does the hospital handle emergency accident cases and fracture surgeries?", "a": "Yes, we are a specialized trauma care center. We have an active trauma surgical team led by Dr. Kumar. Our operating theaters, in-house X-ray facility, diagnostics, and sterile wards are equipped for immediate admission and fracture fixing operations 24/7." },
-        { "q": "Do you offer cashless treatments or accept health insurance?", "a": "Yes. We partner with major health insurance companies and Third-Party Administrators (TPAs) to provide cashless treatment for qualifying surgical procedures. Please visit our front office with your health card and ID for pre-authorization details." },
-        { "q": "Is there in-house physical therapy available for post-surgical recovery?", "a": "Absolutely. We have a dedicated Physiotherapy and Rehabilitation department inside the hospital. Our physical therapists design customized mobility recovery and pain-management programs specifically for patients recovering from joint replacements, fracture repairs, and ligament reconstructions." }
+        {
+          "q": "How do I book an appointment with Dr. Kumar?",
+          "a": "You can request an appointment by clicking any 'Book Appointment' button on this website and filling out the short form, or by calling our desk directly at 08554-245678 or +91 94402 75556. Once submitted, our coordinator will call you to confirm your exact time slot."
+        },
+        {
+          "q": "What are the hospital consulting hours?",
+          "a": "Our Outpatient Department (OPD) is open Monday through Saturday from 9:00 AM to 8:00 PM. Emergency, trauma triaging, and inpatient critical care operations are fully active 24 hours a day, 7 days a week, including Sundays and public holidays."
+        },
+        {
+          "q": "Does the hospital handle emergency accident cases and fracture surgeries?",
+          "a": "Yes, we are a specialized trauma care center. We have an active trauma surgical team led by Dr. Kumar. Our operating theaters, in-house X-ray facility, diagnostics, and sterile wards are equipped for immediate admission and fracture fixing operations 24/7."
+        },
+        {
+          "q": "Do you offer cashless treatments or accept health insurance?",
+          "a": "Yes. We partner with major health insurance companies and Third-Party Administrators (TPAs) to provide cashless treatment for qualifying surgical procedures. Please visit our front office with your health card and ID for pre-authorization details."
+        },
+        {
+          "q": "Is there in-house physical therapy available for post-surgical recovery?",
+          "a": "Absolutely. We have a dedicated Physiotherapy and Rehabilitation department inside the hospital. Our physical therapists design customized mobility recovery and pain-management programs specifically for patients recovering from joint replacements, fracture repairs, and ligament reconstructions."
+        }
       ]
     },
     "contact": {
@@ -160,7 +253,7 @@
         "btnText": "Open in Google Maps"
       },
       "addressCard": {
-        "title": "Hospital Campus",
+        "title": "Hospital Address",
         "desc": "Kumar's Ortho Clinic is easily accessible for patients coming from all corners of Anantapur District.",
         "addressLines": [
           "12-4, 80 Feet Road,",

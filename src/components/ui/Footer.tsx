@@ -3,11 +3,7 @@
 import { motion } from "framer-motion";
 import { MessageSquare, Phone } from "lucide-react";
 
-interface FooterProps {
-  data: any;
-}
-
-export default function Footer({ data }: FooterProps) {
+export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
@@ -23,32 +19,32 @@ export default function Footer({ data }: FooterProps) {
           {/* Hospital Logo & Title */}
           <div className="flex items-center gap-3">
             <img
-              src="/logo.png"
-              alt={`${data.brand.title} Logo`}
+              src="/kumar-hospitals.svg"
+              alt="Kumar's Ortho Clinic Logo"
               className="h-12 w-auto object-contain"
             />
             <div className="h-5 w-[1px] bg-slate-700/50 hidden sm:block" />
             <span className="text-xs sm:text-sm font-bold text-white tracking-wide whitespace-nowrap">
-              {data.brand.title}
+              Kumar's Hospitals.
             </span>
           </div>
 
           {/* Contact & Location Details */}
           <div className="flex flex-wrap items-center gap-x-3 gap-y-1.5 text-xs text-slate-400 font-medium">
             <span className="flex items-center gap-1">
-              <span>📍</span> {data.reachOut.address.replace(/\n.*/g, '')}
+              <span>📍</span> Vidyuth Nagar, Anantapur
             </span>
 
             <span className="text-slate-700 hidden md:inline">|</span>
 
-            <a href={data.reachOut.phone1.href} className="flex items-center gap-1 hover:text-white transition-colors">
-              <span>☎️</span> {data.reachOut.phone1.display}
+            <a href="tel:08554245678" className="flex items-center gap-1 hover:text-white transition-colors">
+              <span>📞</span> 08554-245678
             </a>
 
             <span className="text-slate-700 hidden md:inline">|</span>
 
-            <a href={data.reachOut.phone2.href} className="flex items-center gap-1 hover:text-white transition-colors">
-              <span>📱</span> {data.reachOut.phone2.display}
+            <a href="tel:+919440275556" className="flex items-center gap-1 hover:text-white transition-colors">
+              <span>📱</span> +91 94402 75556
             </a>
           </div>
 
@@ -83,7 +79,7 @@ export default function Footer({ data }: FooterProps) {
 
         {/* Minimal Bottom Bar */}
         <div className="border-t border-slate-800/40 pt-2 flex items-center justify-between text-[10px] text-slate-500 font-medium">
-          <p>Â© Kumar's Ortho Clinic, Anantapur. All Rights Reserved.</p>
+          <p>© Kumar's Ortho Clinic, Anantapur. All Rights Reserved.</p>
         </div>
 
       </div>
